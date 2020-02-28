@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+* {
+    font-family: "Bahnschrift", sans-serif;
+    font-size: 14px;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    background: rgba(255,218,185,0.4)!important;
+}
+.content {
+    min-height: calc(100vh - 100px);
+    margin: 10px 10px 0 170px;
+}
+
+/***CONNECT***/
+.form_connect {
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -150px;
+    left: 50%;
+    margin-left: -175px;
+    background: linear-gradient(to right,
+    rgba(85,107,47,0.8) 33%,
+    rgba(255, 218, 185,0.7) 33%, rgba(255, 218, 185,0.7) 66%,
+    rgba(220, 20, 60,0.8) 66%, rgba(220, 20, 60, 0.8) 99%);
+    width: 300px;
+    height: 230px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 8px 20px;
+}
+.form_connect_title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+.form_connect input {
+    -webkit-appearance: none;
+    outline: 0;
+    border: 0;
+    background: rgb(240,240,240);
+    padding: 12px 10px;
+    margin: 10px 0;
+    width: 100%;
+}
+.form_connect input[type='submit'] {
+    width: 100%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.form_connect input[type='submit']:hover {
+    color: crimson;
+}
+
+/*************/
+
+
+
+/*CONFIRM_ORDER*/
+.confirm_order {
+    display: block;
+    max-width: 900px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+.confirm_order_title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    margin: 10px 0 20px 0;
+}
+.confirm_order_ticket {
+    display: inline-block;
+    background: rgba(255,255,255,0.6);
+    width: 425px;
+    padding: 12px 18px;
+    border-radius: 10px;
+    margin-right: 45px;
+    vertical-align: top;
+}
+.confirm_order_ticket_menu {
+    display: inline-block;
+    width: 330px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.confirm_order_ticket_menu_price {
+    text-align: right;
+    display: inline-block;
+    width: 50px;
+}
+.confirm_order_ticket_title {
+    display: inline-block;
+    width: 310px;
+    margin-left: 20px;
+}
+.confirm_order_ticket_price {
+    display: inline-block;
+    width: 50px;
+    text-align: right;
+}
+.confirm_order_ticket_total {
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,0.8);
+    margin-top: 10px;
+}
+.confirm_order_valid {
+    display: inline-block;
+    vertical-align: top;
+    width: 425px;
+    padding: 12px 18px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 10px;
+}
+.confirm_order_valid input[type='checkbox'] {
+    transform: scale(1.5);
+    margin: 20px 5px 20px 0;
+    vertical-align: -4px;
+    outline: 0;
+}
+.confirm_order_valid input[type='submit'] {
+    padding: 4px 12px;
+    border: 1px solid rgba(85,127,47,0.8);
+    background: #fff;
+    color: rgba(85,127,47,0.8);
+    transition: 0.2s;
+    width: 100%;
+}
+.confirm_order_valid input[type='submit']:hover {
+    background: rgba(85,127,47,0.8);
+    color: #fff;
+}
+.order_cancel {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 4px 12px;
+    border: 1px solid rgba(220, 20, 60,0.8);
+    background: #fff;
+    color: rgba(220, 20, 60,0.8);
+    transition: 0.2s;
+    width: 100%;
+    text-decoration: none!important;
+}
+.order_cancel:hover {
+    background: rgba(220, 20, 60,0.8);
+    color: #fff;
+}
+/***************/
+
+
+
+/****thanks****/
+.thanks_title {
+    text-shadow: -3px 3px 2px rgba(0,0,0,0.3);
+    font-family: 'Pacifico', cursive;
+    position: fixed;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    font-size: 50px;
+    font-weight: bold;
+}
+.red {
+    font-family: inherit;
+    font-size: inherit;
+    color: rgba(220, 20, 60,0.8);
+}
+.white {
+    font-family: inherit;
+    font-size: inherit;
+    color: #fff;
+}
+.green {
+    font-family: inherit;
+    font-size: inherit;
+    color: rgba(85,127,47,0.8);;
+}
+.thanks_img {
+    display: block;
+    width: 300px;
+    margin: 100px auto 20px auto;
+}
+.thanks_text {
+    display: block;
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 22px;
+}
+.thanks_flag_left {
+    width: 390px;
+    position: fixed;
+    top: 10px;
+}
+.thanks_flag_right {
+    width: 390px;
+    position: fixed;
+    top: 10px;
+    right: 0;
+}
+/***************/
+
+
+
+/*headbar_sidebar*/
+.headbar {
+    display: block;
+    height: 100px;
+    width: 100%;
+    background: crimson;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.headbar img {
+    margin: 10px;
+    height: calc(100% - 20px);
+    vertical-align: top;
+}
+.headbar_title {
+    position: fixed;
+    top: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Pacifico', cursive;
+    z-index: 1;
+    color: #fff;
+    font-size: 40px;
+}
+.sidebar {
+    position: fixed;
+    top: 100px;
+    min-height: calc(100vh - 100px);
+    width: 160px;
+    background: darkolivegreen;
+}
+.sidebar li a {
+    display: block;
+    width: 150px;
+    cursor: pointer;
+    padding: 5px 0 0 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.sidebar li a:hover {
+    margin-left: 10px;
+}
+.sidebar li a .glyphicon {
+    margin-right: 5px;
+}
+/*************/
+
+
+
+/**DASHBOARD**/
+.dashboard_orders_non_termine {
+    vertical-align: top;
+    display: inline-block;
+    margin: 20px 0 0 20px;
+    padding: 10px;
+    background: #f5f5f5;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.dashboard_orders_non_termine_title {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid royalblue;
+    color: royalblue;
+    font-size: 18px;
+    font-weight: bold;
+}
+.dashboard_orders_non_termine_title i {
+    color: grey;
+    font-weight: normal;
+    font-size: 12px;
+}
+.dashboard_order_non_termine_order {
+    display: block;
+    width: 100%;
+    background: #fff;
+    padding: 5px;
+    margin: 10px 0;
+}
+.dashboard_order_button {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    left: 10px;
+    vertical-align: top;
+    width: 80px;
+    height: 26px;
+    outline: 0;
+    color: darkolivegreen;
+    border: 1px solid darkolivegreen;
+    background: #fff;
+}
+.dashboard_order_button:hover {
+    background: darkolivegreen;
+    color: #fff;
+}
+.dashboard_order_alltext {
+    display: inline-block;
+    margin-left: 20px;
+}
+.dashboard_order_text {
+    display: block;
+    margin-left: 20px;
+}
+.dashboard_map {
+    margin-top: 10px;
+    width: 100%;
+}
+.bilan_semaine {
+    display: block;
+    width: 1235px;
+    height: 600px;
+    background: #f5f5f5;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 20px;
+    margin: 30px 0 0 30px;
+}
+#bilan_semaine_chart {
+    margin-top: 10px;
+    width: 1150px;
+    height: 500px;
+}
+/*************/
+
+
+
+/**NEW ORDER**/
+.new_order {
+    display: block;
+    width: 1000px;
+    background: #f5f5f5;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 20px;
+
+}
+.new_order_title {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid royalblue;
+    color: royalblue;
+    font-size: 18px;
+    font-weight: bold;
+}
+.new_order_menu {
+    margin: 10px;
+}
+.new_order_menu i {
+    color: grey;
+}
+.new_order_menu select {
+    margin-bottom: 10px;
+    padding: 2px 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.new_order_select_ingredients {
+    margin: 10px 10px 10px 0;
+    display: inline-block;
+    width: 225px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 10px;
+    vertical-align: top;
+}
+.new_order_select_ingredients_title {
+    color: royalblue;
+    font-weight: bold;
+    font-size: 15px;
+}
+.new_order_select_ingredients_ingredient {
+    display: block;
+    width: 100%;
+    background: #fff;
+    margin: 5px 0;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #fff;
+    transition: 0.2s;
+}
+.new_order_select_ingredients_ingredient:hover {
+    color: indigo;
+    border: 1px solid indigo;
+}
+
+.new_order_selected_ingredients {
+    display: block;
+    width: 100%;
+}
+.new_order_selected_ingredients_button {
+    display: inline-block;
+    padding: 2px 6px;
+    margin: 4px;
+    color: indigo;
+    border: 1px solid indigo;
+}
+.new_order_reset {
+    display: inline-block;
+    padding: 4px 12px;
+    border: 1px solid crimson;
+    background: #fff;
+    color: crimson;
+    transition: 0.2s;
+    width: 200px;
+}
+.new_order_submit {
+    display: inline-block;
+    padding: 4px 12px;
+    border: 1px solid rgba(85,127,47,0.8);
+    background: #fff;
+    color: rgba(85,127,47,0.8);
+    transition: 0.2s;
+    width: 750px;
+}
+.new_order_submit:hover {
+    color: #fff;
+    background: rgba(85,127,47,0.8);
+}
+/*************/
+
+
+
+/***ORDER***/
+.dashboard_new_order {
+    font-size: 15px;
+}
+.dashboard_new_order select {
+    margin: 10px 0;
+    width: 200px;
+    text-align-last: center;
+}
+.dashboard_new_order input[type='submit'] {
+    display: block;
+    width: 100%;
+    background: #fff;
+    border: 1px solid darkolivegreen;
+    color: darkolivegreen;
+    float: right;
+    padding: 2px 0;
+    z-index: 2;
+}
+.dashboard_new_order input[type='submit']:hover {
+    color: #fff;
+    background: darkolivegreen;
+}
+/***********/
+
+
+
+/**ORDER**/
+.order_consult_block {
+    vertical-align: top;
+    display: inline-block;
+    margin: 20px 0 0 20px;
+    padding: 10px;
+    background: #f5f5f5;
+    width: 1000px;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.order_consult_block form {
+    display: inline-block;
+    margin: 10px 0 0 30px;
+}
+.button_statut {
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    margin: 4px 10px 0 0;
+    outline: 0;
+    padding: 1px 8px;
+    width: 110px;
+}
+
+
+
+/*********/
+
+
+
+/**SETTINGS**/
+.settings_block {
+    vertical-align: top;
+    display: inline-block;
+    margin: 20px 0 0 20px;
+    padding: 10px;
+    background: #f5f5f5;
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.settings_block_title {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid royalblue;
+    color: royalblue;
+    font-size: 18px;
+    font-weight: bold;
+}
+.settings_block form input[type='password'], .settings_block form input[type='text'] {
+    display: block;
+    margin-top: 5px;
+    padding: 2px 10px;
+    width: 100%;
+}
+.settings_block form input[type='submit'] {
+    display: block;
+    float: right;
+    border: 1px solid darkolivegreen;
+    color: darkolivegreen;
+    padding: 2px 8px;
+    background: #fff;
+    margin-top: 10px;
+}
+.settings_block form input[type='submit']:hover {
+    background: darkolivegreen;
+    color: #fff;
+}
+.settings_block form select {
+    display: block;
+    width: 100%;
+    text-align-last: center;
+    margin: 6px 0;
+    padding: 2px 0;
+}
+/***********/
+
+
+
+/***ERROR***/
+.error_text {
+    display: block;
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 60px;
+
+}
+/**********/
+
+
+
+/**FOOTER**/
+footer {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 6px 0;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    margin-top: 30px;
+}

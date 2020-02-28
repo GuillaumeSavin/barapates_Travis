@@ -1,0 +1,18 @@
+#Block access to this file
+<files .htaccess>
+order allow,deny
+deny from all
+</files>
+
+#Force default file
+DirectoryIndex index.php
+
+#Url module rewriting
+RewriteEngine On
+
+#Rewriting file and folder
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#Rewriting url
+RewriteRule ^(.*)$ index.php?p=$1 [QSA,L]

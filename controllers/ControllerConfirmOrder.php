@@ -12,7 +12,12 @@ class ControllerConfirmOrder {
         $this->_view = new View();
         $this->_view->loadPage("head");
 
-        if ($commandes = explode("?", stripcslashes(trim($_SERVER['REQUEST_URI'])))[1]) {
+        $request_URI = "/barapates/ConfirmOrder?152334";
+        if (isset($_SERVER['REQUEST_URI'])) {
+            $request_URI = $_SERVER['REQUEST_URI'];
+        }
+
+        if ($commandes = explode("?", stripcslashes(trim($request_URI)))[1]) {
             $ticket = "";
             $total = 0;
 

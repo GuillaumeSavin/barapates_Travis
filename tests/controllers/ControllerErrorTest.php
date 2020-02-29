@@ -12,6 +12,7 @@ class ControllerErrorTest extends TestCase {
     }
 
     public function test_construct() {
-        //TODO::
+        $construct = new \ControllerError(404);
+        $this->assertNull($construct->__construct(404));
     }
 }

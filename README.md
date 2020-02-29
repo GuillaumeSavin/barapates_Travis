@@ -2,9 +2,9 @@
 
 _Réalisé par :_
 
-Antoine Lorenc (Structure site, full stack {front + back}, tests unitaires)
+Antoine Lorenc (Structure du site, full stack {front + back})
 Guillaume Savin (Front end, intégration continu)
-Pierre Locquet (Base de données, back end)
+Pierre Locquet (Base de données, tests unitaires)
 
 _Fonctionalités_
 • Page "ConfirmOrder" qui permet de confirmer avec un résumé de la

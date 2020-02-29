@@ -13,4 +13,4 @@ before_script:
 
 script:
   - chmod -R 777 *
-  - php ./vendor/bin/phpunit tests
+  - ./vendor/bin/phpunit tests

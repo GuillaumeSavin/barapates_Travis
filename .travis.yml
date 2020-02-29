@@ -1,0 +1,16 @@
+language: php
+os: linux
+php:
+  - '7.3'
+
+sudo: required
+
+services:
+  - mysql
+
+before_script:
+  - composer self-update
+
+script:
+  - chmod -R 777 *
+  - vendor/bin/phpunit tests

@@ -1,6 +1,6 @@
 <?php
 class Model {
-    private static $DSN  = "mysql:host=localhost; port=3306; dbname=barapates";
+    private static $DSN  = "mysql:host=vps767851.ovh.net; port=3306; dbname=barapates";
     private static $user = "root";
     private static $pwd	= "antoine";
     private static $sql = null;
@@ -17,7 +17,4 @@ class Model {
             return self::$sql;
         }
     }
-
-
-
 }

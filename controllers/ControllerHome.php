@@ -12,6 +12,7 @@ class ControllerHome {
         $this->_view = new View();
         $this->_view->loadPage("head");
         require_once("views/ViewHome.php");
+
         if(isset($_POST['connexion'])) {
             $login = htmlspecialchars($_POST['login']);
 

@@ -9,7 +9,7 @@ before_script:
 - composer self-update
 script:
 - chmod -R 777 *
-- "./vendor/bin/phpunit tests"
+- "./vendor/bin/phpunit tests --stderr"
 deploy:
   provider: heroku
   api_key:

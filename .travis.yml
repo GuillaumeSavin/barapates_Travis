@@ -1,16 +1,16 @@
 language: php
 os: linux
 php:
-  - '7.3'
-
+- '7.3'
 sudo: required
-
 services:
-  - mysql
-
+- mysql
 before_script:
-  - composer self-update
-
+- composer self-update
 script:
-  - chmod -R 777 *
-  - ./vendor/bin/phpunit tests
+- chmod -R 777 *
+- "./vendor/bin/phpunit tests"
+deploy:
+  provider: heroku
+  api_key:
+    secure: q/Mh7d5MN2oj+DBLvg/Dpppp8hqe2P0NijU3lXDWF8w1KzW60px2SogxJppxt6WM3krLKmo78lXMveJ2Z+ShKWvCvfeNJc7iaaGMtMpojJOjkN75sa/savAwyDt8NqAG1U/1dhLccDjcqqlJxJYwQdjQbIa10cynISxi65Ze0DYP3hXHbfZAcTOo2CpOgZmhrYJtj+E1DHXnZw+k1rAhYl0vdtjTreoMwdgFETWzek5v7dlMquY1bd7sYk+WgdkTjDjMaOEPWDhwWOsfKJ8TLN63gkQtYfk11H7YzWYZezncKNriCllBzdqLdPER8u6By8hxBLamKoU/wuuBH6m5UquaeHhWjo6CMk4T32wT0Y189vKzjSiYjsDTXfl4k3n8e4OOwQpXZPHckoItXPnneVPrJVfhIBvj3ZnVAE8FqSRKk91Tvozl3JOa31VuZ/ghLlzbCEdW590ewAq/n0eyqCdgfx3Uo6i10mgVCRxtIlyXDr0sLPMlgqvyjmlio4tgomp01bpFvk3LTS28qqX9drQhvzN1Sz1c7Cw9J5cBZbPeWdb2cGoGJ7foHqKz5oPVisl8AXnHI7vfJOZTa59WQJ7Q0/t9wWmzjcZSMzH3mHlvF8PBaUm8Z6TP5tfMTLrFhF9Cj6vErBTWXPU4gQ/y5REj+M+ZnYjqjz6FkX9+0dE=

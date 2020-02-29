@@ -15,7 +15,7 @@ namespace PHPUnit\Util;
 class Printer
 {
     /**
-     * @var closed-resource|resource
+     * @var resource
      */
     private $stream;
 
@@ -74,8 +74,6 @@ class Printer
     public function write(string $buffer): void
     {
         if ($this->stream) {
-            \assert(\is_resource($this->stream));
-
             \fwrite($this->stream, $buffer);
         } else {
             if (\PHP_SAPI !== 'cli' && \PHP_SAPI !== 'phpdbg') {
@@ -89,8 +87,6 @@ class Printer
     public function flush(): void
     {
         if ($this->stream && $this->isPhpStream) {
-            \assert(\is_resource($this->stream));
-
             \fclose($this->stream);
         }
     }

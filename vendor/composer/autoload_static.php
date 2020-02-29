@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit7360b30dc16d5abaca61890151e47d10
+class ComposerStaticInit8ba915c3639eab7ea09dcc59af73ce6d
 {
     public static $files = array (
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
@@ -338,7 +338,6 @@ class ComposerStaticInit7360b30dc16d5abaca61890151e47d10
         'PHPUnit\\Util\\TestDox\\XmlResultPrinter' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/TestDox/XmlResultPrinter.php',
         'PHPUnit\\Util\\TextTestListRenderer' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/TextTestListRenderer.php',
         'PHPUnit\\Util\\Type' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Type.php',
-        'PHPUnit\\Util\\VersionComparisonOperator' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/VersionComparisonOperator.php',
         'PHPUnit\\Util\\XdebugFilterScriptGenerator' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/XdebugFilterScriptGenerator.php',
         'PHPUnit\\Util\\Xml' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Xml.php',
         'PHPUnit\\Util\\XmlTestListRenderer' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/XmlTestListRenderer.php',
@@ -717,9 +716,9 @@ class ComposerStaticInit7360b30dc16d5abaca61890151e47d10
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit7360b30dc16d5abaca61890151e47d10::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit7360b30dc16d5abaca61890151e47d10::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit7360b30dc16d5abaca61890151e47d10::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit8ba915c3639eab7ea09dcc59af73ce6d::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit8ba915c3639eab7ea09dcc59af73ce6d::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit8ba915c3639eab7ea09dcc59af73ce6d::$classMap;
 
         }, null, ClassLoader::class);
     }

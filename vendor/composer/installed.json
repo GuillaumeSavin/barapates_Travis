@@ -760,17 +760,17 @@
     },
     {
         "name": "phpunit/phpunit",
-        "version": "9.0.1",
-        "version_normalized": "9.0.1.0",
+        "version": "9.0.0",
+        "version_normalized": "9.0.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/sebastianbergmann/phpunit.git",
-            "reference": "68d7e5b17a6b9461e17c00446caa409863154f76"
+            "reference": "a5be9621b19ee19dca5f150a5b159f48b5389547"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/68d7e5b17a6b9461e17c00446caa409863154f76",
-            "reference": "68d7e5b17a6b9461e17c00446caa409863154f76",
+            "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a5be9621b19ee19dca5f150a5b159f48b5389547",
+            "reference": "a5be9621b19ee19dca5f150a5b159f48b5389547",
             "shasum": ""
         },
         "require": {
@@ -808,7 +808,7 @@
             "ext-soap": "*",
             "ext-xdebug": "*"
         },
-        "time": "2020-02-13T07:30:12+00:00",
+        "time": "2020-02-07T06:56:17+00:00",
         "bin": [
             "phpunit"
         ],

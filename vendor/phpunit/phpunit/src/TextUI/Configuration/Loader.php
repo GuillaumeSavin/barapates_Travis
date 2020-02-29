@@ -26,7 +26,6 @@ use PHPUnit\TextUI\Configuration\Logging\TestDox\Xml as TestDoxXml;
 use PHPUnit\TextUI\Configuration\TestSuite as TestSuiteConfiguration;
 use PHPUnit\TextUI\DefaultResultPrinter;
 use PHPUnit\Util\TestDox\CliTestDoxPrinter;
-use PHPUnit\Util\VersionComparisonOperator;
 use PHPUnit\Util\Xml;
 
 /**
@@ -820,10 +819,10 @@ final class Loader
                     $phpVersion = (string) $directoryNode->getAttribute('phpVersion');
                 }
 
-                $phpVersionOperator = new VersionComparisonOperator('>=');
+                $phpVersionOperator = '>=';
 
                 if ($directoryNode->hasAttribute('phpVersionOperator')) {
-                    $phpVersionOperator = new VersionComparisonOperator((string) $directoryNode->getAttribute('phpVersionOperator'));
+                    $phpVersionOperator = (string) $directoryNode->getAttribute('phpVersionOperator');
                 }
 
                 $directories[] = new TestDirectory(
@@ -852,10 +851,10 @@ final class Loader
                     $phpVersion = (string) $fileNode->getAttribute('phpVersion');
                 }
 
-                $phpVersionOperator = new VersionComparisonOperator('>=');
+                $phpVersionOperator = '>=';
 
                 if ($fileNode->hasAttribute('phpVersionOperator')) {
-                    $phpVersionOperator = new VersionComparisonOperator((string) $fileNode->getAttribute('phpVersionOperator'));
+                    $phpVersionOperator = (string) $fileNode->getAttribute('phpVersionOperator');
                 }
 
                 $files[] = new TestFile(
